@@ -1,0 +1,42 @@
+/* ====================
+	* GRID *
+==================== */
+.grid {
+  display: grid;
+  gap: 20px;
+}
+$sizes: 1,2,3,4,5,6,7,8,9,10,11,12;
+
+/* Tamaño Grande - Computadoras y TV */
+@each $size in $sizes {
+  .col-#{$size} {
+    grid-template-columns: repeat($size, 1fr);
+  }
+  .span-#{$size} {
+    grid-column: span #{$size};
+  }
+}
+
+@media screen and (min-width: $size-md) {
+  @each $size in $sizes {
+    .md\:col-#{$size} {
+      grid-template-columns: repeat($size, 1fr);
+    }
+  }
+}
+
+@media screen and (min-width: $size-lg) {
+  @each $size in $sizes {
+    .lg\:col-#{$size} {
+      grid-template-columns: repeat($size, 1fr);
+    }
+  }
+}
+
+@media screen and (min-width: $size-xl) {
+  @each $size in $sizes {
+    .xl\:col-#{$size} {
+      grid-template-columns: repeat($size, 1fr);
+    }
+  }
+}
