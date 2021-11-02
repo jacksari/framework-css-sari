@@ -1,0 +1,24 @@
+$colors: (
+  "100": $--clr-primary-1,
+        "200": $--clr-primary-2,
+        "300": $--clr-primary-3,
+        "400": $--clr-primary-4,
+        "500": $--clr-primary-5,
+        "600": $--clr-primary-6,
+        "700": $--clr-primary-7,
+        "800": $--clr-primary-8,
+        "900": $--clr-primary-9,
+);
+
+
+@each $color, $value in $colors {
+  .bg-primary-#{$color}{
+    background: $value;
+  }
+}
+
+@each $color, $value in $colors {
+  .text-primary-#{$color}{
+    color: $value;
+  }
+}

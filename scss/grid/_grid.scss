@@ -17,6 +17,14 @@ $sizes: 1,2,3,4,5,6,7,8,9,10,11,12;
   }
 }
 
+@media screen and (min-width: $size-sm) {
+  @each $size in $sizes {
+    .sm\:col-#{$size} {
+      grid-template-columns: repeat($size, 1fr);
+    }
+  }
+}
+
 @media screen and (min-width: $size-md) {
   @each $size in $sizes {
     .md\:col-#{$size} {

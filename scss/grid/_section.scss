@@ -1,0 +1,23 @@
+.section{
+  padding: 1rem 0;
+  @media screen and (min-width: $size-md) {
+    padding: 2rem 0;
+  }
+  @media screen and (min-width: $size-lg) {
+    padding: 4rem 0;
+  }
+  @media screen and (min-width: $size-xl) {
+    padding: 5rem 0;
+  }
+}
+
+.section-center{
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1200px;
+  @media screen and (min-width: 992px) {
+    .section-center{
+      width: 95vw;
+    }
+  }
+}

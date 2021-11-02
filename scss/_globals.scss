@@ -1,0 +1,50 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+/*
+===============
+Global Styles
+===============
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: $--ff-primary;
+  background: $--grey-50;
+  color: $--grey-700;
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+img:not(.nav-logo) {
+  width: 100%;
+  display: block;
+}
+
+
+
+
+/*
+===============
+Lines
+===============
+*/
+
+.line-red{
+  border: 1px solid red;
+}
+.line-green{
+  border: 1px solid green;
+}
